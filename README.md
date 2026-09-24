@@ -284,6 +284,14 @@ def print_budget(contents: list[dict]) -> None:
 Pruébalo con cualquier lista de `contents` que ya tengas. Este es el chequeo que vas a volver
 a usar cuando el historial empiece a crecer, en el Paso 7.
 
+*RESPUESTA:*
+
+```bash
+Historial: 70 tokens (0.0067% de la ventana)
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+En JavaScript moderno, es mejor evitar `var` porque causa confusiones difíciles de detectar al declarar variables. Te recomiendo usar `let` o `const` en su lugar, ya que son más seguros y predecibles. Así mantendrás tu código ordenado y libre de errores extraños desde el principio.
+```
+
 ---
 
 ## Paso 6 — Autopsia: el modelo no recuerda
