@@ -138,7 +138,9 @@ Ejecuta:
 uv run python gemini_client.py
 ```
 
-RESPUESTA:
+*RESPUESTA:*
+
+```bash
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 Una **API** (por sus siglas en inglés, *Application Programming Interface*, que se traduce como **Interfaz de Programación de Aplicaciones**) es, en términos sencillos, **un conjunto de reglas y protocolos que permite que dos aplicaciones de software se comuniquen entre sí**.
 
@@ -157,6 +159,7 @@ prompt    : 7
 respuesta : 196
 TOTAL     : 203
 finish    : FinishReason.MAX_TOKENS
+```
 
 
 **Fíjate en `finish`.** Si dice `STOP`, el modelo terminó solo. Si alguna vez dice
@@ -229,11 +232,14 @@ if __name__ == "__main__":
 Ejecuta de nuevo. El `system_instruction` **no se pierde** cuando más adelante recortes el
 historial — vive en la config, no en `contents`.
 
-RESPUESTA:
+*RESPUESTA:*
+
+```bash
 
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 `var` es la forma antigua de crear cajas para guardar datos en JavaScript. Hoy en día es mejor no usarla porque puede causar confusiones difíciles de resolver en tu código. En su lugar, te recomiendo usar `let` para datos que cambian o `const` para datos fijos.
 
+```
 
 ### Experimento rápido (2 min)
 
