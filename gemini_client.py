@@ -16,7 +16,7 @@ SYSTEM_INSTRUCTION = (
     "Sin jerga sin explicar, sin inventar funciones."
 )
 
-def ask(prompt: str, temperature: float = 0.7) -> tuple[str, str]:
+def ask(prompt: str, temperature: float = 1.3) -> tuple[str, str]:
     """Returns (text, finish_reason)."""
     response = client.models.generate_content(
         model=MODEL,

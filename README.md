@@ -235,7 +235,6 @@ historial — vive en la config, no en `contents`.
 *RESPUESTA:*
 
 ```bash
-
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
 `var` es la forma antigua de crear cajas para guardar datos en JavaScript. Hoy en día es mejor no usarla porque puede causar confusiones difíciles de resolver en tu código. En su lugar, te recomiendo usar `let` para datos que cambian o `const` para datos fijos.
 
@@ -246,6 +245,20 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
 Cambia `temperature` a `0.1` y luego a `1.3` en la misma pregunta y compara. Este parámetro,
 junto con `max_output_tokens` y `top_p`, son los tres que de verdad vas a tocar — el resto se
 queda como está por defecto.
+
+*temperature=0.1*
+
+```bash
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+Te recomiendo evitar `var` porque es una forma antigua de crear variables que causa confusiones difíciles de detectar. En su lugar, usa `let` para valores que van a cambiar y `const` para los que se quedan igual. Así tu código será más ordenado y fácil de entender.
+```
+
+*temperature=1.3*
+
+```bash
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+En JavaScript moderno, es mejor evitar usar `var` porque puede causar confusiones difíciles de encontrar en tu código. En su lugar, utiliza `let` para variables que van a cambiar, o `const` para valores que se quedan fijos. Así mantendrás tus programas más ordenados y sin errores inesperados.
+```
 
 ---
 
