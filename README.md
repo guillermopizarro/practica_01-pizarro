@@ -324,6 +324,15 @@ modelo** — cada llamada a `generate_content` es una petición HTTP independien
 estado compartido con la anterior. Antes de seguir, discute con tu compañero: ¿por qué pasa
 esto? Recojan una hipótesis antes de pasar al siguiente paso.
 
+
+*RESPUESTA:*
+
+```bash
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+BOT: ¡Hola Valeria, bienvenida al mundo de la programación! Estoy aquí para enseñarte los fundamentos paso a paso. ¿Estás lista para escribir tu primera línea de código?
+BOT: No tengo forma de saber tu nombre, ya que recién estamos comenzando a hablar. Puedes decirme cómo te llamas para que nos conozcamos mejor.
+```
+
 ---
 
 ## Paso 7 — Construye la memoria

@@ -41,27 +41,12 @@ def ask(prompt: str, temperature: float = 1.3) -> tuple[str, str]:
 
 
 def main() -> None:
-    # 1. Creamos un historial ficticio
-    history = [
-        {"role": "user", "parts": [{"text": "¿Qué opinas de var en JS?"}]},
-        {
-            "role": "model",
-            "parts": [
-                {
-                    "text": "'var' es la forma antigua de declarar variables en JavaScript y tiene alcance de función. "
-                    "Hoy en día es mejor usar 'let' o 'const' para evitar errores impredecibles. "
-                    "Facilita mantener un código más limpio y seguro."
-                }
-            ],
-        },
-        {"role": "user", "parts": [{"text": "¿Y cuál es la diferencia con let?"}]},
-    ]
+    r1_text, _ = ask("Hola, me llamo Valeria.")
+    print("BOT:", r1_text)
 
-    # 2. Imprimimos el presupuesto de tokens del historial
-    print_budget(history)
-    
-    text, _ = ask("¿Qué opinas de var en JS?")
-    print(text)
+    r2_text, _ = ask("¿Cómo me llamo?")
+    print("BOT:", r2_text)
+
 
 if __name__ == "__main__":
     main()
