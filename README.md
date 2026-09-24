@@ -23,8 +23,7 @@ Te llamas Alex y tu color favorito es el verde.
 
 ### Por qué elegí ventana deslizante
 
-<explica en 2-3 líneas por qué esta estrategia y no resumen progresivo,
-memoria selectiva o almacenamiento externo, para este caso>
+Elegí la ventana deslizante por ser la estrategia más simple de implementar y la de menor latencia y costo en conversaciones cortas. Para un asistente de pocas iteraciones, mantener los últimos $N$ __(representa el número de intercambios o turnos que decides conservar en la variable MAX_TURNS)__ turnos es suficiente para conservar el contexto inmediato sin la sobrecostosa complejidad de generar resúmenes progresivos ni la infraestructura adicional que requieren la memoria selectiva o las bases de datos externas.
 
 ### Límite de solicitudes provocado (Paso 9)
 
